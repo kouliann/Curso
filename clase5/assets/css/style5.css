@@ -1,0 +1,428 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.2;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration:none;
+}
+
+:root{
+    --primary-color: #522258;
+    --secundary-color: #8C3061;
+    --pink:#C63C51;
+    --peach: #e98b86;
+    --white:#FDF0D1;
+    --black:black;
+    --grey:gray;
+
+}
+
+a:hover{
+    color: var(--secundary-color);
+}
+
+a:focus{
+    color: aqua;
+}
+
+a:link{
+    color: var(--white);
+}
+a:visited{
+    color: var(--peach);
+}
+a:active{
+    color: var(--secundary-color);
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid ;
+    border-bottom-color: var(--secundary-color);
+    background:var(--primary-color);
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+}
+nav ul{
+    list-style: none; /*quitar el estilo de las listas*/
+
+}
+nav li{
+    display: flex; /*se visualiza en horizontal*/
+    padding: 25px 20px;
+    background-color: var(--pink);
+}
+nav li a{
+    color:var(--white);
+    font-size: 18px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--primary-color);
+}
+.servicios{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    background-color: var(--white);
+    padding: 15px 15px 10px 15px;
+    margin-top: 100px;
+}
+.item-servicios{
+    border:1px  solid var(--grey);
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: #522258;
+    animation-name: purplebox;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+
+@keyframes purplebox{
+    from{ background-color: #522258;}
+        to{ background-color: #D95F59;}
+
+        /*0% {background-color: #8C3061; left:0px; top:0px;}
+        25% {background-color: #C63C51; left:200px; top:0px;}
+        50% {background-color: aliceblue; left:200px; top:200px;}
+        75% {background-color: aquamarine; left:0px; top:200px;}
+        100%{background-color: aqua; left:0px; top:0px;}*/
+        from{left:0px;}
+        to{left:500px}
+}
+
+.cambiocolor{
+    color: var(--primary-color);
+    animation-name: iconpink;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes iconpink {
+    from{color:var(--primary-color);}
+    to{color:var(--peach);}
+    0% {color:#522258;}
+    25% {color:#8C3061;}
+    50% {color:#C63C51;}
+    75% {color: rgb(233, 156, 156);}
+    100% {color:#D95F59;}
+}
+
+.title{
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    color: var(--black);
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+h3{
+    font-size: 36px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.icon{
+    font-size: 2em;
+    color: var(--pink);
+}
+
+.nosotros{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 100px;
+    margin-top: 100px;
+    /*background-color: var(--primary-color);*/
+    background-image: url(../images/azulito.jpg);
+    color: var(--peach) ;
+}
+
+.nosotros h2{
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.nosotros p{
+    color: var(--white);
+}
+
+shadow{
+    background-color: var(--peach);
+}
+
+.img{
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid var(--white);
+    height: 300px;
+}
+
+.padding-left-50x{
+    padding-left: 50px;
+}
+
+
+.contacto{
+    width: 100%;
+    background: var(--primary-color);
+    padding: 15px 10px 15x 15px;
+    /* display: block;*/
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    background-color: var(--white);
+    gap: 10px;
+    margin-top: 100px;
+    margin-right: 100px;
+   
+}
+
+.contact1{
+    color: var(--primary-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.contact1 h2{
+    color: var(--secundary-color);
+}
+
+
+.contact2{
+    color: var(--primary-color);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    
+}
+input[type="submit"]{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+label{
+    color: var(--white);
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
+}    
+
+.button{
+    background-color: var(--secundary-color);
+    color: var(--white);
+    font-size: 24px;
+    border-radius: 20px;
+    border: 1px var(--secundary-color);
+    text-transform: uppercase;
+    margin: 10px;
+    padding-bottom: 5px;
+
+}
+
+.submit{
+    color: var(--white);
+    font-size: 24px;
+    border-radius: 20px;
+    border: 1px var(--secundary-color);
+    text-transform: uppercase;
+    margin: 10px;
+    padding-bottom: 5px; 
+}
+
+footer{
+
+    display: grid; 
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 80px;
+    background-color: var(--primary-color);
+}
+
+footer ul{
+    list-style: none; /*quita el estilo de las listas*/
+
+}
+footer li{
+    display: flex; /*se visualiza en horizontal*/
+    padding: 15px 10px;
+    background-color: var(--primary-color);
+}
+footer li a{
+    color:var(--black);
+    font-size: 25px;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: var(--secundary-color);
+}
+
+.servicios-redes{
+    text-align: left;
+    padding: 30px;
+}
+.diaz{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    padding-left: 40px;
+    
+}
+
+ul{
+    text-decoration: none;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.icon-redes{
+    color: var(--white);
+    font-size: 2em;
+}
+
+.fotografia{
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/paisaje.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    text-align: center;
+}
+
+.fotografia p{
+    color:var(--black)
+}
+
+.disenografico{
+    color: var(--white);
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/vista-superior-escritorio-cafe-teclado_23-2148397869.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    text-align: center;
+
+}
+
+.disenografico h1{
+    color: var(--white);
+}
+
+.desarrolloweb{
+    color: var(--white);
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/code.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    text-align: center;
+}
+
+.desarrolloweb h1{
+    color: var(--white);
+}
+
+.galeria{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.fotos{
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.foto{
+   font-size: 1em;
+    color: var(--pink); 
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+

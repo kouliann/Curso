@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
+body{
+    padding: 0%;
+    margin: auto;
+        font-family: "IM Fell DW Pica", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+:root{
+    --primary-color:rgb(41, 41, 97);
+    --secundary-color:rgb(110, 159, 192);
+    --text-principa:black;
+    --white:white;
+    padding-top: 50px;
+}
+
+.favoritos{
+    background-color: var(--primary-color);
+    width:100%;
+    height: auto;
+
+    .primeraparte{
+        background-color: var(--secundary-color);
+        width: 500px;
+        height: 500px;
+        color:var(--white);
+        /*color: var(--black);*/
+        padding-top: 10px;
+    }
+    
+}
+
+.nav{
+    color: var(--white);
+    font-size: 30px;
+    background-color: var(--primary-color);
+}

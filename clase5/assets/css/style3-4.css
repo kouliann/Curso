@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.2;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root{
+    --primary-color: #522258;
+    --secundary-color: #8C3061;
+    --pink:#C63C51;
+    --peach: #D95F59;
+    --white:#FDF0D1;
+    --black:black;
+    --grey:gray;
+
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid ;
+    border-bottom-color: var(--secundary-color);
+    background:var(--primary-color);
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+}
+nav ul{
+    list-style: none; /*quitar el estilo de las listas*/
+
+}
+nav li{
+    display: flex; /*se visualiza en horizontal*/
+    padding: 25px 20px;
+    background-color: var(--pink);
+}
+nav li a{
+    color:var(--white);
+    font-size: 18px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--primary-color);
+}
+.servicios{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+}
+.item-servicios{
+    border:1px  solid var(--grey);
+    text-align: center;
+    padding: 30px;
+}
+.title{
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+h3{
+    font-size: 36px;
+}
+p{
+    font-size: 20px;
+}
+.icon{
+    font-size: 2em;
+    color: var(--pink);
+}
+.nosotros{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 100px;
+    margin-top: 100px;
+    /*background-color: var(--primary-color);*/
+    background-image: url(../images/AA.jpg);
+    color: var(--peach) ;
+
+}
+shadow{
+    background-color: var(--peach);
+}
+.img{
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid var(--white);
+    height: 300px;
+}
+.nosotros h2{
+    color: var(--white);
+    text-transform: uppercase;
+}
+.padding-left-50x{
+    padding-left: 50px;
+}
+
+.button{
+    background:var(--secundary-color);
+    color: var(--white);
+    font-size: 24px;
+    padding: 15px 15px 10px 15px;
+    border-radius: 20px;
+    border: 1px var(--secundary-color);
+    text-transform: uppercase;
+
+}
+.contacto{
+    width: 100%;
+    background: var(--primary-color);
+    padding-left: 10%;
+   /* display: block;*/
+   display: grid;
+   align-content: center;
+   grid-template-columns: auto auto;
+   gap: 10px;
+   background-color: var(--white);
+   padding: 10px;
+   margin-top: 100px;
+   
+}
+input[type="text"], input[type="email"], input[type="tel"]{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+input[type="submit"]{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+label{
+    color: var(--white);
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
+}    
+
+
+.contact1{
+    color: var(--primary-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.contact1 h2{
+    color: var(--secundary-color);
+}
+
+footer{
+    display: grid; 
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+    background-color: var(--white);
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 80px;
+}
+
+footer ul{
+    list-style: none; /*quitar el estilo de las listas*/
+
+}
+footer li{
+    display: flex; /*se visualiza en horizontal*/
+    padding: 15px 10px;
+    background-color: var(--white);
+}
+footer li a{
+    color:var(--black);
+    font-size: px;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: var(--primary-color);
+}
+.servicios-redes{
+    text-align: left;
+    padding: 30px;
+}
+.diaz{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    padding-left: 40px;
+    
+}
+
+ul{
+    text-decoration: none;
+    list-style:none;
+}
+a {
+    text-decoration: none;
+}
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    align-items: center;
+}
+.padding-left-50x p{
+    color: var(--white);
+}
