@@ -12,11 +12,11 @@ body{
 }
 
 :root{
-    --primary-color: #522258;
-    --secundary-color: #8C3061;
-    --pink:#C63C51;
-    --peach: #e98b86;
-    --white:#FDF0D1;
+    --primary-color: #5A639C;
+    --secundary-color: #7776B3;
+    --pink:#9B86BD;
+    --peach: #E2BBE9;
+    --white:#ffffff;
     --black:black;
     --grey:gray;
 
@@ -108,8 +108,8 @@ nav li a:hover{
 
 
 @keyframes purplebox{
-    from{ background-color: #522258;}
-        to{ background-color: #D95F59;}
+    from{ background-color: var(--primary-color);}
+        to{ background-color: var(--peach);}
 
         /*0% {background-color: #8C3061; left:0px; top:0px;}
         25% {background-color: #C63C51; left:200px; top:0px;}
@@ -129,11 +129,11 @@ nav li a:hover{
 @keyframes iconpink {
     from{color:var(--primary-color);}
     to{color:var(--peach);}
-    0% {color:#522258;}
-    25% {color:#8C3061;}
-    50% {color:#C63C51;}
-    75% {color: rgb(233, 156, 156);}
-    100% {color:#D95F59;}
+    0% {color:var(--primary-color);}
+    25% {color: var(--secundary-color);}
+    50% {color:var(--pink);}
+    75% {color:#a9adc5;}
+    100% {color:var(--peach);}
 }
 
 .title{
@@ -328,11 +328,11 @@ footer li a:hover{
     text-align: left;
     padding: 30px;
 }
-.diaz{
+.logo{
     width: 150px;
     height: 150px;
-    border-radius: 5px;
-    padding-left: 40px;
+    border-radius: 10px;
+    margin-left: 80px;
     
 }
 
@@ -399,6 +399,51 @@ a{
 
 .desarrolloweb h1{
     color: var(--white);
+}
+
+.desarrollodeapp{
+    color: var(--black);
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/desarrollo\ de\ app.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    text-align: center;
+}
+
+.desarrollodeapp h1{
+    color: var(--black);
+}
+
+.audiovisual{
+    color: var(--white);
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/64_RED_RRSS_Medios-audiovisuales.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    text-align: center;
+}
+
+.audiovisual p{
+    color: var(--black);
+}
+
+.seo{
+    color: var(--white);
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/seo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    text-align: center;
+}
+
+.seo p{
+    color: var(--black);
 }
 
 .galeria{
