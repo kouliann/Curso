@@ -12,7 +12,7 @@ body{
 }
 
 :root{
-    --primary-color: #5A639C;
+    --primary-color: #333963;
     --secundary-color: #7776B3;
     --pink:#9B86BD;
     --peach: #E2BBE9;
@@ -142,13 +142,11 @@ nav li a:hover{
 
 h1{
     font-size: 3em;
-    color: var(--black);
 }
 
 h2{
-    font-size: 50px;
+    font-size: 2em;
     font-weight: 800;
-    color: var(--primary-color);
 }
 
 h3{
@@ -167,7 +165,7 @@ p{
 .nosotros{
     display: grid;
     align-content: center;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     gap: 10px;
     padding: 100px;
     margin-top: 100px;
@@ -213,6 +211,7 @@ shadow{
     gap: 10px;
     margin-top: 100px;
     margin-right: 100px;
+    
    
 }
 
@@ -225,6 +224,8 @@ shadow{
 
 .contact1 h2{
     color: var(--secundary-color);
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -272,7 +273,7 @@ textarea{
     margin-top: 10px;
 }    
 
-.button{
+.button, .sumbit{
     background-color: var(--secundary-color);
     color: var(--white);
     font-size: 24px;
@@ -281,21 +282,11 @@ textarea{
     text-transform: uppercase;
     margin: 10px;
     padding-bottom: 5px;
+    padding-top: 5px;
 
-}
-
-.submit{
-    color: var(--white);
-    font-size: 24px;
-    border-radius: 20px;
-    border: 1px var(--secundary-color);
-    text-transform: uppercase;
-    margin: 10px;
-    padding-bottom: 5px; 
 }
 
 footer{
-
     display: grid; 
     align-content: center;
     grid-template-columns: auto auto auto auto;
@@ -389,7 +380,7 @@ a{
 .desarrolloweb{
     color: var(--white);
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-image: url(/assets/images/code.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -397,53 +388,122 @@ a{
     text-align: center;
 }
 
-.desarrolloweb h1{
-    color: var(--white);
+.dsweb{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    background-color: var(--secundary-color);
+    gap: 10px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border:5px  solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 30px;
 }
 
 .desarrollodeapp{
-    color: var(--black);
-    width: 100%;
-    height: 400px;
-    background-image: url(/assets/images/desarrollo\ de\ app.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 3%;
+    color: var(--white);
     text-align: center;
+    background-image: url(/assets/images/azulito.jpg);
+    padding: 40px;
+    margin-bottom: 5px;
+    height: 250px;
 }
 
-.desarrollodeapp h1{
-    color: var(--black);
+.planes{
+   display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto; 
+    gap: 20px;
+    background-color: var(--white);
+    padding: 15px 15px 10px 15px;
+    margin-top: 50px;
 }
+
+.planes2{
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 20px;
+    background-color: var(--white);
+    margin-top: 50px;
+}
+
+.card{
+    gap: 25px;
+    border-radius: 25px;
+    padding: 35px 35px 35px 35px;
+    background-color: var(--pink);
+    margin-top: 40px;
+    text-align: center;
+    max-width: 300px;
+    height: 600px;
+    margin-left: 25px;
+}
+
+.card2{
+    gap: 25px;
+    border: 1px var(--grey);
+    border-radius: 25px;
+    padding: 35px 35px 35px 35px;
+    background-color: var(--secundary-color);
+    text-align: center;
+    max-width: 300px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.card:hover, .card2:hover{
+    border: 5px var(--primary-color);
+    background-color: var(--peach);
+}
+
+
 
 .audiovisual{
-    color: var(--white);
+    color: var(--black);
     width: 100%;
-    height: 400px;
+    height: 300px;
+    padding-top:3%;
     background-image: url(/assets/images/64_RED_RRSS_Medios-audiovisuales.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 3%;
     text-align: center;
 }
 
-.audiovisual p{
-    color: var(--black);
+.av{
+    display: grid; 
+    grid-template-columns: auto auto;
+    background-color: var(--secundary-color);
+    gap: 10px;
+    padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border:5px  solid var(--primary-color);
+    border-radius: 10px;
 }
 
 .seo{
     color: var(--white);
-    width: 100%;
-    height: 400px;
-    background-image: url(/assets/images/seo.png);
+    height: 200px;
+    background-image: url(/assets/images/vista-superior-escritorio-cafe-teclado_23-2148397869.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     padding: 3%;
     text-align: center;
 }
 
-.seo p{
-    color: var(--black);
+.text{
+    background-color: var(--secundary-color);
+    gap: 10px;
+    padding: 100px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border:5px  solid var(--primary-color);
+    border-radius: 10px; 
+    text-align: center;
 }
 
 .galeria{
@@ -465,9 +525,31 @@ a{
 .foto{
    font-size: 1em;
     color: var(--pink); 
+    padding-top: 30px;
     width: 250px;
     height: 200px;
     border-radius: 5px;
 }
 
+.precios{
+    font-size: 50px;
+    margin: 40px;
+    padding-right:5px;
+    border-radius: 15px;
+}
 
+.icon2{
+    font-size: 60px;
+    color: var(--primary-color);
+    
+}
+
+.listas{
+    list-style: none;
+    text-align: left;
+    font-size: 30px;
+}
+
+.center{
+    text-align: center;
+}
