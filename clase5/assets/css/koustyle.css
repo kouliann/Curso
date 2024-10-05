@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+@import url(/assets/css/querys.css);
+
+body{
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.2;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --primary-color: #333963;
+    --secundary-color: #7776B3;
+    --pink:#9B86BD;
+    --peach: #E2BBE9;
+    --white:#ffffff;
+    --black:black;
+    --grey:gray;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover, footer a:hover{
+    color: var(--white);
+}
+
+
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid ;
+    border-bottom-color: var(--secundary-color);
+    background:var(--primary-color);
+}
+
+.heather{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+    color: var(--white);
+
+}
+
+.heather li{
+    display: flex; 
+    padding: 25px 20px;
+    background-color: var(--pink);
+    font-size: 18px ;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.servicios{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    background-color: var(--white);
+    padding: 15px 15px 10px 15px;
+    margin-top: 100px;
+}
+
+.item{
+    border:1px  solid var(--grey);
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    pad: 5px;
+}
+
+.nosotros{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10%;
+    margin-top: 100px;
+    background-image: url(../images/azulito.jpg);
+    color: var(--white); 
+    font-size: 30px;
+}
+
+.contacto{
+    width: 100%;
+    background: var(--primary-color);
+    padding: 15px 10px 15x 15px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    background-color: var(--white);
+    gap: 10px;
+    margin-top: 100px;
+    margin-right: 100px;
+
+}
+
+.contact{
+    color: var(--primary-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 25px;
+    
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="submit"]{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    
+}
+
+label{
+    color: var(--white);
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
+}  
+
+button, .submit{
+    background-color: var(--secundary-color);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px var(--secundary-color);
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding: 15px 10px;
+
+}
+
+.foto{
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid var(--white);
+    height: 100%;
+}
+
+footer{
+    display: grid; 
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 80px;
+    background-color: var(--primary-color);
+}
+
+footer li{
+    display: flex;
+    padding: 10px;
+}
+
+.desarrolloweb{
+    color: var(--white);
+    width: 100%;
+    height: 30%;
+    background-image: url(/assets/images/code.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.dsweb{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    background-color: var(--secundary-color);
+    gap: 10px;
+    padding: 5%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border:5px  solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.audiovisual{
+    color: var(--black);
+    width: 100%;
+    height: 30%;
+    padding-top:3%;
+    background-image: url(/assets/images/64_RED_RRSS_Medios-audiovisuales.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.av{
+    display: grid; 
+    grid-template-columns: auto auto;
+    background-color: var(--secundary-color);
+    border:5px  solid var(--primary-color);
+    gap: 10px;
+    padding: 5%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.desarrollodeapp{
+    color: var(--white);
+    text-align: center;
+    background-image: url(/assets/images/azulito.jpg);
+    padding: 40px;
+    margin-bottom: 5px;
+    height: 250px;
+}
+
+.planes{
+    display: grid;
+     align-content: center;
+     grid-template-columns: auto auto auto; 
+     gap: 3%;
+     background-color: var(--white);
+     padding: 5%;
+     margin-top: 50px;
+     padding-bottom: 50px;
+     font-size: 20px;
+ }
+ 
+ .planes2{
+     display: grid;
+     grid-template-columns: auto auto; 
+     gap: 20px;
+     background-color: var(--white);
+     margin-top: 50px;
+ }
+ 
+ .card{
+     border-radius: 25px;
+     padding: 10%;
+     background-color: var(--pink);
+     margin-top: 40px;
+     text-align: center;
+     font-size: 24px;
+     height: 90%;
+     margin-left: 3%;
+ }
+ 
+ .card2{
+     gap: 25px;
+     border: 1px var(--grey);
+     border-radius: 25px;
+     padding: 5%;
+     background-color: var(--secundary-color);
+     text-align: center;
+     height: 90%;
+     margin-top: 40px;
+     margin-left: 150px;
+ }
+ 
+ .card:hover, .card2:hover{
+     border: 5px var(--primary-color);
+     background-color: var(--peach);
+ }
+
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.precios{
+    font-size: 50px;
+    margin: 40px;
+    padding-right:5px;
+    border-radius: 15px;
+}
+
+.icon{
+    color: var(--secundary-color);
+    font-size: 2em;
+}
+
+
+.listas{
+    list-style: none;
+    text-align: left;
+}
+
+.paddinleft5{
+    padding-left: 10%;
+}
