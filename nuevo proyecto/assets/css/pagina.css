@@ -1,0 +1,42 @@
+a, a:hover, a:link, a:active{
+    text-decoration: none;
+    color: black;
+}
+
+.contacto{
+    width: 100%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-top: 100px;
+
+}
+
+.contact{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 25px;
+    
+}
+
+footer{
+    display: grid; 
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 80px;
+    background-color: var(--primary-color);
+}
+
+footer li{
+    display: flex;
+    padding: 10px;
+}
+
+.listas{
+    list-style: none;
+    text-align: left;
+}
