@@ -88,45 +88,91 @@
         </div>
       </div>
 
-      <div class="card mb-3 p-5 card text-center bg-primary-subtle" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="assets/images/midnigts.jfif" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
+      <section class="row p-5 mt-5 bg-secondary">
+        <div class="col ps-5 ms-5">
+            <img src="assets/images/ttpda.jfif" class="img-thumbnail">
         </div>
-      </div>
+        <div class="col pe-5 me-5">
+          <h2>KouServices</h2>
+            <p>somos un equipo de profesionales, entsiastas de la tecnologia con habilidades unicas que haras tu marca memorable</p>
+            <a href="#"><button type="button" class="btn btn-dark">Conversemos..</button></a>
+        </div>
+      </section>
       
-      <section class="contacto">
+      <section class="contacto p-3">
         <div class="mb-3 contact">
           <i class="bi bi-envelope fs-1"></i>
           <h2>Envia el Formulario </h2>
             <p>estaremos muy contentos de poder ayudarte con tu proyecto</p>
         </div>
-        <div class="mb-3 contact">
-          <form action="form1" action="#" method="post">
-          <label for="Name" class="form-label">name</label>
-            <input type="text" class="form-control" name="name" placeholder="...">
-          <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" placeholder="name@example.com">
-          <label for="tel" class="form-label">Telefono</label>
-            <input type="tel" class="form-control" placeholder="...">
-          <textarea name="mensaje" class="form-control" rows="3">Escribe aqui tu propuesta</textarea>  
-          <input type="submit" value="Enviar">  
-        </form>
-        </div>
+
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="mb-3 col">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="name" id="name" required>
+              <div class="valid-feedback">
+                muy bien
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <label for="Email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" required>
+              <div class="valid-feedback">
+                excelente
+              </div>
+              <div id="emailHelp" class="form-text">nunca compartas tu email con nadie</div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="sexo" class="label">Sexo</label>
+              <select class="form-select">
+                <option value="#">Femenino</option>
+                <option value="#">Masculino</option>
+                <option value="#">Licuadora</option>
+              </select>
+          </div>
+
+          <div class="row">
+            <div class="form-check col">
+              <input class="form-check-input" type="checkbox" id="presencial" required>
+              <label for="form-check-label" for="presencial">Presencial</label>
+            </div>
+  
+            <div class="form-check col">
+              <input class="form-check-input" type="checkbox" id="online">
+              <label class="form-check-label" for="online">Online</label>
+            </div>
+  
+            <div class="form-check col">
+              <input class="form-check-input" type="radio" id="Maracay" name="sede" required> 
+              <label class="form-check-label" for="Maracay">Maracay</label>
+            </div>
+  
+            <div class="form-check col">
+              <input class="form-check-input" type="radio" id="San Juan de los morros" name="sede" required>
+              <label class="form-check-label" for="San Juan de los morros">San Juan</label>
+            </div>
+  
+            <div class="form-check form-switch col">
+              <input class="form-check-input" type="checkbox" role="switch" id="Individual" name="metodo" required>
+              <label class="form-check-label" for="Individual">Individual</label>
+            </div>
+  
+            <div class="form-check form-switch col">
+              <input class="form-check-input" type="checkbox" role="switch" id="grupal" name="metodo" required>
+              <label class="form-check-label" for="grupal">grupal</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary mt-5">Submit</button>
+      </form>
       </section>
 
-      <footer>
+      <footer class="bg-dark">
         <section>
-                <img src="assets/images/estrella.jpg" alt="redes" class="logo">
-             <ul class="listas redes">    
+            <img src="assets/images/estrella.jpg" alt="redes" class="img-thumbnail m-5" width="200px" height="200px">
+             <ul class="listas">    
                 <li><a href="https://www.facebook.com/profile.php?id=100008729223495"><i class="fa-brands fa-facebook-f icon"></i></a></li>
                 <li><a href="https://www.instagram.com/agenciaendigitalcl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram icon"></i></a></li>
                 <li><a href="x.com"><i class="fa-solid fa-x icon"></i></a></li>

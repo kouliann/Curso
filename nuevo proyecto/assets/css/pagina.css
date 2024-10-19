@@ -1,6 +1,10 @@
-a, a:hover, a:link, a:active{
+a, a:link{
     text-decoration: none;
-    color: black;
+    color: aliceblue;
+}
+
+a:hover{
+    color: rgb(65, 61, 61);
 }
 
 .contacto{
