@@ -1,0 +1,217 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link rel="stylesheet" href="assets/css/pagina.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">KouServices</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="KouServices.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Horarios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Diseño Grafico</a></li>
+                  <li><a class="dropdown-item" href="#">Programacion</a></li>
+                  <li><a class="dropdown-item" href="#">Wordpress</a></li>
+                  <li><a class="dropdown-item" href="#">Fotografia</a></li>
+                  <li><a class="dropdown-item" href="#">Audio-Visual</a></li>
+                  <li><a class="dropdown-item" href="#">SEO</a></li>
+                </ul>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <section class="text-center p-5">
+        <h1>Servicios a tu disposicion!</h1>
+      <p>escoje el tuyo</p>
+    </section>
+      
+      <div class="container text-center p-3">
+        <div class="row align-items-start gap-3">
+          <div class="col border border-success rounded p-5">
+            <i class="bi bi-camera fs-1"></i>
+            <h2>Fotografia</h2>
+            <p>Inmortalizamos tus momentos</p>
+          </div>
+          <div class="col border border-success rounded p-5">
+            <i class="bi bi-palette2 fs-1"></i>
+            <h2>Diseño Grafico</h2>
+            <p>Hacemos tus ideas realidad</p>
+          </div>
+          <div class="col border border-success rounded p-5">
+            <i class="bi bi-film fs-1"></i>
+            <h2>Audio-Visual</h2>
+            <p>Producimos y Editamos tus videos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center p-3">
+        <div class="row align-items-start gap-3">
+          <div class="col border border-success rounded p-5">
+            <i class="bi bi-display fs-1"></i>
+            <h2>Desarrollo Web</h2>
+            <p>Creamos tu sitio web a la medida</p>
+          </div>
+          <div class="col border border-success rounded p-5">
+            <i class="bi bi-phone fs-1"></i>
+            <h2>Desarrollo de App</h2>
+            <p>la aplicacion que tu marca necesita</p>
+          </div>
+          <div class="col border border-success rounded p-5">
+            <i class="bi bi-search fs-1"></i>
+            <h2>SEO</h2>
+            <p>Posicionamos tu marca</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="row p-5 mt-5 bg-secondary">
+        <div class="col ps-5 ms-5">
+            <img src="assets/images/ttpda.jfif" class="img-thumbnail">
+        </div>
+        <div class="col pe-5 me-5">
+          <h2>KouServices</h2>
+            <p>somos un equipo de profesionales, entsiastas de la tecnologia con habilidades unicas que haras tu marca memorable</p>
+            <a href="#"><button type="button" class="btn btn-dark">Conversemos..</button></a>
+        </div>
+      </section>
+      
+      <section class="contacto p-3">
+        <div class="mb-3 contact">
+          <i class="bi bi-envelope fs-1"></i>
+          <h2>Envia el Formulario </h2>
+            <p>estaremos muy contentos de poder ayudarte con tu proyecto</p>
+        </div>
+
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="mb-3 col">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="name" id="name" required>
+              <div class="valid-feedback">
+                muy bien
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <label for="Email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" required>
+              <div class="valid-feedback">
+                excelente
+              </div>
+              <div id="emailHelp" class="form-text">nunca compartas tu email con nadie</div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="sexo" class="label">Sexo</label>
+              <select class="form-select">
+                <option value="#">Femenino</option>
+                <option value="#">Masculino</option>
+                <option value="#">Licuadora</option>
+              </select>
+          </div>
+
+          <div class="row">
+            <div class="form-check col">
+              <input class="form-check-input" type="checkbox" id="presencial" required>
+              <label for="form-check-label" for="presencial">Presencial</label>
+            </div>
+  
+            <div class="form-check col">
+              <input class="form-check-input" type="checkbox" id="online">
+              <label class="form-check-label" for="online">Online</label>
+            </div>
+  
+            <div class="form-check col">
+              <input class="form-check-input" type="radio" id="Maracay" name="sede" required> 
+              <label class="form-check-label" for="Maracay">Maracay</label>
+            </div>
+  
+            <div class="form-check col">
+              <input class="form-check-input" type="radio" id="San Juan de los morros" name="sede" required>
+              <label class="form-check-label" for="San Juan de los morros">San Juan</label>
+            </div>
+  
+            <div class="form-check form-switch col">
+              <input class="form-check-input" type="checkbox" role="switch" id="Individual" name="metodo" required>
+              <label class="form-check-label" for="Individual">Individual</label>
+            </div>
+  
+            <div class="form-check form-switch col">
+              <input class="form-check-input" type="checkbox" role="switch" id="grupal" name="metodo" required>
+              <label class="form-check-label" for="grupal">grupal</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary mt-5">Submit</button>
+      </form>
+      </section>
+
+      <footer class="bg-dark">
+        <section>
+            <img src="assets/images/estrella.jpg" alt="redes" class="img-thumbnail m-5" width="200px" height="200px">
+             <ul class="listas">    
+                <li><a href="https://www.facebook.com/profile.php?id=100008729223495"><i class="fa-brands fa-facebook-f icon"></i></a></li>
+                <li><a href="https://www.instagram.com/agenciaendigitalcl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram icon"></i></a></li>
+                <li><a href="x.com"><i class="fa-solid fa-x icon"></i></a></li>
+                <li><a href="tiktok.com"><i class="fa-brands fa-tiktok icon"></i></a></li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="listas">
+                <h2>La Empresa</h2>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Team</a</li>
+                <li><a href="#">Portafolio</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="listas">
+                <h2>Programas y Cursos</h2>
+                <li><a href="desarrolloweb.html">Desarrollo Web</a></li>
+                <li><a href="desarrollodeapp.html">Desarrollo de Apps</a></li>
+                <li><a href="seo.html">SEO</a></li>
+                <li><a href="fotografia.html">Fotografia</a></li>
+                <li><a href="audiovisual.html">Audio-Visual</a></li>
+                <li><a href="disenografico.html">Diseño Grafico</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="listas">
+                <h2>Contacto y ubicacion</h2>
+                <li><a href="eliannibethpadrino@gmail.com">Correo</a></li>
+                <li><a href="https://maps.app.goo.gl/efyH2S7fnaJMaART6">Ubicacion</a></li>
+                <li><a href="+58 4243068194">Numero de contacto</a></li>
+            </ul>
+        </section>
+    </footer>
+
+
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> 
+</body>
+</html> 
