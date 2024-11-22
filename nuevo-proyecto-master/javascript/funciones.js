@@ -34,6 +34,7 @@ function calculadora (n1,n2, mostrar=false){
 
 calculadora (500, 35, false);*/
 
+//callbacks
 function sumando(n1,n2, sumaMuestra, sumaPordos){
     var suma=n1+n2;
     sumaMuestra(suma);

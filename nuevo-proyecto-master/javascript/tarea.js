@@ -1,17 +1,16 @@
-var n1=parseInt(prompt("ingrese el valor de n1", 0));
-var n2=parseInt(prompt("Ingrese el valor de n2", 0));
 
+    "user strict";
 
+    //tabla de multiplicar
     var num=parseInt(prompt("ingrese el valor para sacar su tabla de multiplicar", 0));
-     if (num1<1){
-        console.log("El primer número debe ser menor que el segundo.");
-        num=parseInt(prompt("ingrese el valor para sacar su tabla de multiplicar", 0));
+     if (num<1){
+        console.log("valores mayores a 0");
+        num=parseInt(prompt("vuelva a intentar", 0));
   }
 
     function calculadora (num){
         let y=1;
         let mul="";
-        let r
 
         while(y<=10){
             mul=num*y;
@@ -19,8 +18,10 @@ var n2=parseInt(prompt("Ingrese el valor de n2", 0));
             y++;
         }
     }
-
     calculadora (num);
+
+
+    //ED
     let n1=parseInt(prompt("Ingrese el primer número:"));
     let n2=parseInt(prompt("Ingrese el segundo número:"));
 
@@ -33,16 +34,20 @@ var n2=parseInt(prompt("Ingrese el valor de n2", 0));
         console.log("ED-" +i);
     }
 
-    let n1=parseInt(prompt("Ingrese el primer número:"));
-    let n2=parseInt(prompt("Ingrese el segundo número:"));
-    const num=[n1, n2];
 
+    //impares
+    let n3=parseInt(prompt("Ingrese el primer valor:"));
+    let n4=parseInt(prompt("Ingrese el ultimo valor:"));
+
+    if(n3>=n4 || n3<0 ){
+        console.log("error, pruebe otra vez")
+        n3=parseInt(prompt("Ingrese el primer valor:"));
+        n4=parseInt(prompt("Ingrese el ultimo valor:"));
+    }
     
-    for (let i=0; i<num.length; i++){
-        if (num[i]%2==0){
-            console.log(num[i]+ " es par");
-        }else{
-            console.log(num[i]+ " es impar");
+    for (let i=n3+1; i<=n4; i++){
+        if (i%2==1){
+            console.log(i);
         }
     }
           
